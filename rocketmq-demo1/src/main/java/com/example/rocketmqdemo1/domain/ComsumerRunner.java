@@ -1,15 +1,9 @@
 package com.example.rocketmqdemo1.domain;
 
 import com.alibaba.rocketmq.client.consumer.DefaultMQPushConsumer;
-import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
-import com.alibaba.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
-import com.alibaba.rocketmq.client.consumer.listener.MessageListenerConcurrently;
-import com.alibaba.rocketmq.common.message.MessageExt;
 import com.example.rocketmqdemo1.config.MQConsumerConfiguration;
-import com.example.rocketmqdemo1.entity.User;
 import com.example.rocketmqdemo1.listener.MQConsumeMsgListenerProcessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,13 +11,10 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
-import java.util.List;
-
 
 /**
  * Title:com.example.rocketmqdemo1.domain.ComsumerRunner
- * Description:
+ * Description:  此类没什么用
  * Copyright: Copyright (c) 2019
  * Company: 北京思特奇信息技术股份有限公司
  *
